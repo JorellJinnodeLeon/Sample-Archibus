@@ -12,4 +12,5 @@
 		<parameter name="type2" dataType="verbatim" value="1=1"/>
 	</dataSource>
 	<panel type="form" id="testPanel" dataSource="test"/>
+	//Roy Salvador
 </view>
