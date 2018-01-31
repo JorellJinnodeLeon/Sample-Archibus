@@ -9,5 +9,6 @@
 		<field table="cost_tran_recur" name="cost_cat_id"/>
 		<field table="cost_tran_recur" name="amount_income_total_payment"/>
 		<parameter name="type" dataType="verbatim" value="1=1"/>
+		<parameter name="type2" dataType="verbatim" value="1=1"/>
 	</dataSource>
 </view>
