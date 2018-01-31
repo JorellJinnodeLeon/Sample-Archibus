@@ -10,4 +10,5 @@
 		<field table="cost_tran_recur" name="amount_income_total_payment"/>
 		<parameter name="type" dataType="verbatim" value="1=1"/>
 	</dataSource>
+	<panel type="form" id="testPanel" dataSource="test"/>
 </view>
