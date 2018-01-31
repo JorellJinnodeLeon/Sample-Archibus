@@ -1,0 +1,14 @@
+<view version="2.0">
+	<dataSource id="test">
+		<sql dialect="generic">
+			select cost_tran_recur.cost_cat_id, cost_tran_recur.amount_income_total_payment from cost_tran_recur inner join cost_cat 
+			on cost_tran_recur.cost_cat_id = cost_cat.cost_cat_id inner join cost_class 
+			on cost_cat.cost_class_id = cost_class.cost_class_id where ${parameters['type']}
+		</sql>
+		<table name="cost_tran_recur" role="main"/>
+		<field table="cost_tran_recur" name="cost_cat_id"/>
+		<field table="cost_tran_recur" name="amount_income_total_payment"/>
+		<parameter name="type" dataType="verbatim" value="1=1"/>
+	</dataSource>
+	<panel type="grid" id="testPanel" dataSource="test"/>
+</view>
